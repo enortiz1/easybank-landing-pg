@@ -36,6 +36,10 @@
     visibility: visible;
     opacity: 1;
   }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
   to {
     visibility: hidden;
     opacity: 0;
@@ -46,6 +50,10 @@
   from {
     visibility: visible;
     opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
   }
   to {
     visibility: hidden;
@@ -85,6 +93,10 @@ a,
 a:visited,
 a:hover {
   text-decoration: none;
+}
+
+.container {
+  padding: 1.0625rem 1.5rem;
 }
 
 .flex {
@@ -135,22 +147,21 @@ button,
   }
 }
 
-.header.open .header__menu > span:first-child {
+.header.open .header__toggle > span:first-child {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-.header.open .header__menu > span:nth-child(2) {
+.header.open .header__toggle > span:nth-child(2) {
   opacity: 0;
 }
 
-.header.open .header__menu > span:last-child {
+.header.open .header__toggle > span:last-child {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
 .header .overlay {
-  display: none;
   opacity: 0;
   position: fixed;
   top: 3.75rem;
@@ -165,8 +176,8 @@ button,
   display: block;
 }
 
-.header nav {
-  padding: 1.0625rem 1.5rem;
+.header .nav {
+  padding-top: 1.0625rem 0px;
 }
 
 .header__logo img {
@@ -174,7 +185,7 @@ button,
   height: 1.375rem;
 }
 
-.header__menu > span {
+.header__toggle > span {
   display: block;
   width: 26px;
   height: 2px;
@@ -185,8 +196,20 @@ button,
           transform-origin: 3px 1px;
 }
 
-.header__menu > span:not(:last-child) {
+.header__toggle > span:not(:last-child) {
   margin-bottom: 5px;
+}
+
+.header__menu {
+  background: white;
+  padding: 1.625rem;
+}
+
+.header__menu a {
+  display: block;
+  color: #2d314d;
+  padding: 0.625rem;
+  text-align: center;
 }
 
 .header__links a {

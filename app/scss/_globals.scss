@@ -36,8 +36,32 @@ a:hover {
 }
 //Spacing
 .container {
-  padding-left: 1.5rem;
+  max-width: 69.375rem;
+  margin: 0 auto;
+
+&--pall{
+  padding-top: 2.25rem;
   padding-right: 1.5rem;
+  padding-bottom: 2.25rem;
+  padding-left: 1.5rem;
+}
+
+&--py {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+&--pt {
+  padding-top: 2.25rem;
+}
+&--pr {
+  padding-right: 1.5rem;
+}
+&--pb {
+  padding-bottom: 2.25rem;
+}
+&--pl {
+  padding-left: 1.5rem;
+}
 }
 // Flexbox
 .flex {
@@ -70,7 +94,7 @@ button,
   color: $white;
   font-size: $font-sm;
   transition: opacity 300ms ease-in-out;
-  
+
   &:hover {
     opacity: 0.8;
   }

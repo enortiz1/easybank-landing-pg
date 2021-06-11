@@ -1,4 +1,11 @@
 .hero {
+@include breakpoint-up(large){
+  display: flex;
+  align-items: center;
+
+}
+ 
+
   &__image {
       //border: 1px solid magenta;
     position: relative;
@@ -8,6 +15,14 @@
     background-position: center center;
     min-height: 17.5rem;
 
+
+    @include breakpoint-up(large){
+      flex: 3;
+      order: 2;
+      min-height: 41rem;
+      background-image: url("/images/bg-intro-desktop.svg");
+      background-position: left center;
+    }
     &::before {
       content: "";
       position: absolute;
@@ -33,6 +48,10 @@
     p{
       line-height: 1.5;
       margin-bottom: 2.25rem;
+    }
+    @include breakpoint-up(large){
+      flex: 2;
+      order: 1;
     }
   }
 }

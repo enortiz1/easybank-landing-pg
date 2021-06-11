@@ -99,6 +99,10 @@ body.noscroll {
   overflow: hidden;
 }
 
+h1, h2, h3 {
+  margin-top: 0px;
+}
+
 a,
 a:visited,
 a:hover {
@@ -136,6 +140,7 @@ a:hover {
 
 button,
 .button {
+  display: inline-block;
   padding: 0.875rem 2.1875rem;
   background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
   background: linear-gradient(to right, #31d35c, #2bb7da);
@@ -281,7 +286,6 @@ button,
 }
 
 .hero__image {
-  border: 1px solid magenta;
   position: relative;
   background-image: url("/images/bg-intro-mobile.svg");
   background-size: cover;
@@ -301,7 +305,20 @@ button,
   background-position: center bottom;
 }
 
+.hero__text {
+  text-align: center;
+}
+
 .hero__text h1 {
   font-weight: 300;
+  font-size: 2.31rem;
+  line-height: 1.15;
+  color: #2d314d;
+  margin-bottom: 1.5rem;
+}
+
+.hero__text p {
+  line-height: 1.5;
+  margin-bottom: 2.25rem;
 }
 /*# sourceMappingURL=style.css.map */

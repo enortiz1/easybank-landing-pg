@@ -370,11 +370,6 @@ button:hover,
   margin-bottom: 1.5rem;
 }
 
-.hero__text p {
-  line-height: 1.5;
-  margin-bottom: 2.25rem;
-}
-
 @media (min-width: 64em) {
   .hero__text {
     -webkit-box-flex: 2;
@@ -383,6 +378,12 @@ button:hover,
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+    text-align: left;
   }
+}
+
+.hero__text p {
+  line-height: 1.5;
+  margin-bottom: 2.25rem;
 }
 /*# sourceMappingURL=style.css.map */

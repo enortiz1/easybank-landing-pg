@@ -343,6 +343,13 @@ button:hover,
   min-height: 17.5rem;
 }
 
+@media (min-width: 40em) {
+  .hero__image {
+    min-height: 25rem;
+    background-position: center 60%;
+  }
+}
+
 @media (min-width: 64em) {
   .hero__image {
     -webkit-box-flex: 3;
@@ -356,20 +363,17 @@ button:hover,
   }
 }
 
-.hero__image::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: url("/images/bg-intro-desktop.svg");
-  background-size: 93%;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-}
-
 @media (min-width: 64em) {
   .hero__image::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    background-image: url("/images/bg-intro-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
     width: 150%;
+    background-size: 122%;
+    background-position: 0% 83%;
   }
 }
 
@@ -382,6 +386,12 @@ button:hover,
   background-size: 93%;
   background-repeat: no-repeat;
   background-position: center bottom;
+}
+
+@media (min-width: 40em) {
+  .hero__image::after {
+    background-size: 52%;
+  }
 }
 
 @media (min-width: 64em) {
@@ -427,5 +437,34 @@ button:hover,
 .hero__text p {
   line-height: 1.5;
   margin-bottom: 2.25rem;
+}
+
+@media (min-width: 40em) {
+  .feature__grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.feature__item {
+  border: 1px solid magenta;
+  padding: 0.9375rem;
+}
+
+@media (min-width: 40em) {
+  .feature__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
+  }
+}
+
+@media (min-width: 64em) {
+  .feature__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */
